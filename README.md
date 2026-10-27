@@ -228,6 +228,13 @@ The application will use bottom navigation to allow users to switch between the 
 
 Wireframes will illustrate the layout and navigation of Loop-Hole before development.
 
+
+<img width="1510" height="1041" alt="Hand-Drawn Chess App Wireframes" src="https://github.com/user-attachments/assets/b4199c97-8f68-4861-84a0-c338c3484996" />
+
+<img width="601" height="834" alt="PNG image" src="https://github.com/user-attachments/assets/c576b926-789b-43c7-92f6-413c5a0c6d72" />
+
+
+
 ### Planned Wireframes
 
 1. Login / Sign Up Screen
