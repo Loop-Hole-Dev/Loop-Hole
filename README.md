@@ -1,161 +1,351 @@
-Mobile App — Loop-Hole
-CodePath AND102 Capstone Project
-Table of Contents
-- Milestone 1 — Loop-Hole (Unit 7)
-  - Overview
-  - Product Spec
-  - Navigation
-  - Wireframes
-- Milestone 2 — Build Sprint 1 (Unit 8)
-- Milestone 3 — Build Sprint 2 (Unit 9)
-- App Demo Video
-Milestone 1 — Loop-Hole (Unit 7)
-Overview
-Description
-Loop-Hole is a free chess training app that teaches players the strategy behind the game so they can improve their skills and compete more confidently with friends. Instead of only playing matches, users choose an opening course, learn each line move by move, and reinforce what they learn through spaced-repetition reviews.
 
-Loop-Hole is designed to make chess training accessible: no subscriptions, paywalls, daily caps, or limits on lessons and reviews. Players can try a sample lesson as guests, create accounts using Firebase Authentication, track their progress, and build consistent practice habits. Planned advanced features include leaderboards, community courses, human-like opponents based on real-game move frequencies, and chess position analysis using Stockfish. Blackjack and Tic-Tac-Toe strategy trainers are stretch goals.
-App Evaluation
-- Category: Games / Education
-- Mobile: Loop-Hole is designed for touch-friendly mobile use. Players can complete short lessons and reviews anywhere, while practice reminders and streak tracking encourage regular use. A progressive web app (PWA) version is a possible future enhancement.
-- Story: A player keeps losing to a friend in the first ten moves. They select an opening course, practice a few lines, review them over the week, and return to their next game with a stronger understanding of what to play and why.
-- Market: Beginner and intermediate chess players, students, school and college chess clubs, and casual players who want affordable, structured training. The app's free model removes a common barrier to learning.
-- Habit: Spaced repetition brings users back when learned lines are due for review. Streaks, progress tracking, XP, activity history, and future leaderboards provide additional motivation.
-- Scope: V1 focuses on Firebase login, opening courses, Learn mode, Review mode, and a progress dashboard. V2 adds XP, leaderboards, course creation and sharing, Human Moves practice, and a Stockfish analysis board. V3 explores Blackjack and Tic-Tac-Toe trainers. V1 is intended to be useful on its own.
-Product Spec
-1. User Features (Required and Optional)
-Required Features (MVP)
-- [ ] User can create an account and log in with Firebase Authentication (email/password or Google).
-- [ ] User can browse a catalog of chess opening courses.
-- [ ] User can view a course's details and enroll in it.
-- [ ] User can try the first line of a course as a guest without creating an account.
-- [ ] User can learn opening lines move by move on an interactive chessboard, with arrows and explanations before playing each move.
-- [ ] User can practice unlimited lessons and reviews without paywalls or daily caps.
-- [ ] User can review previously learned lines without hints and receive feedback on their moves.
-- [ ] User's review schedule can adapt using spaced repetition.
-- [ ] User can view a progress dashboard showing due reviews, completed lines, mastery progress, and practice activity.
-Optional Features
-- [ ] User can earn XP and see weekly and all-time leaderboards.
-- [ ] User can track daily streaks and view an activity heatmap.
-- [ ] User can create a private course by importing a PGN or editing a move tree.
-- [ ] User can publish courses, browse community courses, and upvote useful lessons.
-- [ ] User can practice against human-like opponent moves informed by real-game data.
-- [ ] User can analyze positions on a free board using Stockfish.
-- [ ] User can enable dark mode and receive review reminders.
-- [ ] User can install a future PWA version on a home screen.
-Stretch Features
-- [ ] User can practice Blackjack basic strategy (hit, stand, double, split) and receive feedback.
-- [ ] User can play Tic-Tac-Toe against an unbeatable computer opponent and request optimal-move hints.
-- [ ] User can switch among Chess, Blackjack, and Tic-Tac-Toe from a game picker.
-2. Screen Archetypes
-Screen	What the user can do
-Login / Sign Up	Create an account or sign in with Firebase Authentication.
-Home / Openings Catalog	Browse available opening courses and choose one.
-Course Detail	Read a course description, view its lessons, enroll, or try a guest lesson.
-Learn	Follow instructions and play moves on an interactive chessboard.
-Review	Recall learned lines without hints and receive performance feedback.
-Dashboard	Check reviews due, mastery progress, completed lessons, and practice history.
-Leaderboards (optional)	View weekly and all-time XP rankings.
-Community (optional)	Browse, filter, and upvote shared courses.
-Course Creator (optional)	Import PGN files, edit move trees, and publish courses.
-Human Moves (optional)	Practice against moves modeled on real-game frequencies.
-Analysis Board (optional)	Explore positions with a Stockfish engine.
-Blackjack Trainer (stretch)	Drill basic-strategy decisions and see accuracy.
-Tic-Tac-Toe (stretch)	Play against an unbeatable AI and receive hints.
+<div align="center">
 
+# ♟️ LOOP-HOLE
 
-Navigation
-Tab Navigation (Tab to Screen)
-Core tabs
-- Openings (Home): Browse and select chess opening courses.
-- Review: Complete due review sessions.
-- Dashboard: View progress, completed lessons, and practice history.
-Optional / future tabs
-- Leaderboards: Compare weekly and all-time XP.
-- Community: Discover and share courses.
-- Games: Choose Blackjack or Tic-Tac-Toe trainers (stretch).
-Flow Navigation (Screen to Screen)
-Login / Sign Up Screen
-- → Home (after successful login or sign-up)
-Home / Openings Catalog Screen
-- → Course Detail (tap an opening course)
-Course Detail Screen
-- → Learn (tap Start Learning)
-- → Guest Lesson (tap Try First Line without an account)
-- → Human Moves (optional practice mode)
-Guest Lesson
-- → Sign Up (after previewing the first line, if the user wants to save progress)
-Learn Screen
-- → Course Detail (finish a line or return to the course)
-- → Review (practice learned material)
-Review Screen
-- → Dashboard (finish the review queue)
-Dashboard Screen
-- → Review (tap Review Due Lines)
-- → Course Detail (tap a course in progress)
-Community Screen (optional)
-- → Course Detail (tap a community course)
-- → Course Creator (tap Create Course)
-Course Creator Screen (optional)
-- → Community (after publishing a course)
-Analysis Board Screen (optional)
-- → Previous Screen (tap Back)
-Games Screen (stretch)
-- → Blackjack Trainer
-- → Tic-Tac-Toe
-Wireframes
-To add: Insert pictures of hand-drawn wireframes for the Login, Home, Course Detail, Learn, Review, and Dashboard screens.
+### Learn the Opening. Master the Strategy. Play with Confidence.
 
-<!-- Example: ![Home Screen Wireframe](images/home-wireframe.jpg) -->
+**A free chess training app designed to help players improve their skills, learn openings, and become more confident in every game.**
 
-[BONUS] Digital Wireframes & Mockups
-To add: Figma mockups or screenshots.
+![Platform](https://img.shields.io/badge/Platform-Android-green)
+![Course](https://img.shields.io/badge/CodePath-AND102-blue)
+![Status](https://img.shields.io/badge/Status-In%20Development-yellow)
+![Price](https://img.shields.io/badge/Price-100%25%20Free-brightgreen)
 
-[BONUS] Interactive Prototype
-To add: Figma prototype link.
+</div>
 
-Milestone 2 — Build Sprint 1 (Unit 8)
-GitHub Project Board
-To add in Unit 8: Screenshot of the GitHub Project Board showing all three milestones.
+---
 
-Issue Cards
-To add in Unit 8: Screenshot of issues worked on during Sprint 1.
+## 📌 Table of Contents
 
-To add in Unit 8: Screenshot of issues planned for Sprint 2, including assigned owners.
+- [Overview](#-overview)
+- [App Evaluation](#-app-evaluation)
+- [Product Spec](#-product-spec)
+- [Screen Archetypes](#-screen-archetypes)
+- [Navigation](#-navigation)
+- [Wireframes](#-wireframes)
+- [Milestone 2 - Build Sprint 1](#-milestone-2---build-sprint-1-unit-8)
+- [Milestone 3 - Build Sprint 2](#-milestone-3---build-sprint-2-unit-9)
+- [App Demo](#-app-demo)
 
-Issues Worked on This Sprint
-To complete in Unit 8: List only issues actually completed during Sprint 1.
+---
 
-Suggested Sprint 1 issues (planning only):
-- [ ] Set up the Android Studio project and repository structure.
-- [ ] Create the Home / Openings Catalog screen.
-- [ ] Define the opening course data model.
-- [ ] Display course listings in a RecyclerView.
-- [ ] Build the Course Detail screen.
-- [ ] Create the first interactive chessboard layout.
-- [ ] Connect the Home, Course Detail, and Learn screens.
-Sprint 1 Build Progress
-To add in Unit 8: GIF showing actual progress from Sprint 1. Use a different recording for Sprint 2.
+# 🚀 Milestone 1 - App Planning (Unit 7)
 
-Milestone 3 — Build Sprint 2 (Unit 9)
-GitHub Project Board
-To add in Unit 9: Updated Project Board screenshot reflecting Sprint 2 work, not a duplicate of Sprint 1.
+## 📱 Overview
 
-Completed User Stories
-To complete in Unit 9: List only user stories implemented and tested during Sprint 2.
+### Description
 
-Suggested Sprint 2 issues (planning only):
-- [ ] Let users select an opening and begin a lesson.
-- [ ] Support interactive chess moves during lessons.
-- [ ] Display hints and feedback for correct and incorrect moves.
-- [ ] Record completed lessons.
-- [ ] Create a basic Review mode.
-- [ ] Display progress in the Dashboard.
-Pending or Cut User Stories
-To complete in Unit 9: Identify remaining, postponed, or removed features and explain any scope changes.
+**Loop-Hole** is a free mobile chess training application designed to help beginner and intermediate players understand chess strategies, improve their decision-making, and become more confident when playing against others.
 
-Sprint 2 Build Progress
-To add in Unit 9: Video or GIF demonstrating newly implemented functionality since Sprint 1.
+Unlike traditional chess applications that focus mainly on playing matches, Loop-Hole focuses on teaching users **why certain moves work and how to use them effectively**.
 
-App Demo Video
-To add: YouTube or Vimeo link to the completed Demo Day preparation video.
+Users can select chess opening courses, learn moves step by step, and strengthen their knowledge through spaced-repetition reviews.
+
+The application also aims to make chess education accessible by providing unlimited practice without subscriptions, paywalls, or daily restrictions.
+
+Future updates will introduce leaderboards, community-created courses, computer opponents, and additional strategy games.
+
+### ✨ Key Highlights
+
+| Feature | Description |
+|---|---|
+| ♟️ Chess Openings | Learn popular chess openings step by step |
+| 📚 Interactive Lessons | Practice moves on an interactive chessboard |
+| 🔁 Review Mode | Remember openings through spaced repetition |
+| 📊 Progress Tracking | Monitor completed lessons and mastered openings |
+| 🔥 Daily Streaks | Stay motivated through consistent practice |
+| 🏆 Leaderboards | Compete with other players and earn XP |
+| 💰 Free Learning | No subscriptions or daily learning limits |
+
+---
+
+## 📊 App Evaluation
+
+| Category | Evaluation |
+|---|---|
+| **Category** | Games / Education |
+| **Mobile** | Loop-Hole is designed for mobile devices with a touch-friendly chessboard, simple navigation, and short practice sessions that users can complete anywhere. |
+| **Story** | A student constantly loses chess games against friends because they do not understand opening strategies. They download Loop-Hole, practice different openings, review their moves, and gradually become a stronger player. |
+| **Market** | Beginner and intermediate chess players, college students, chess clubs, and casual players looking to improve their skills without paying for expensive training tools. |
+| **Habit** | Daily reviews, practice streaks, progress tracking, XP, and leaderboards encourage users to return and continue learning. |
+| **Scope** | Version 1 focuses on chess opening courses, interactive lessons, review sessions, and progress tracking. Future versions will introduce community features, AI-supported practice, and additional strategy games. |
+
+---
+
+# 🛠️ Product Spec
+
+## 1. User Features
+
+### ✅ Required Features (MVP)
+
+- [ ] User can create an account and log in using Firebase Authentication.
+- [ ] User can browse a catalog of available chess opening courses.
+- [ ] User can select a chess opening and view its details.
+- [ ] User can learn chess openings through interactive lessons.
+- [ ] User can move chess pieces on a touch-friendly chessboard.
+- [ ] User can receive feedback after making correct or incorrect moves.
+- [ ] User can review previously learned moves without hints.
+- [ ] User can track completed lessons and overall progress.
+- [ ] User can access chess training without subscriptions or daily limits.
+
+### ⭐ Optional Features
+
+- [ ] User can preview the first lesson without creating an account.
+- [ ] User can maintain a daily practice streak.
+- [ ] User can earn XP by completing lessons and reviews.
+- [ ] User can view weekly and all-time leaderboards.
+- [ ] User can create custom chess opening courses.
+- [ ] User can publish courses for other users.
+- [ ] User can practice against computer-generated opponents.
+- [ ] User can analyze chess positions using Stockfish.
+- [ ] User can receive daily practice reminders.
+- [ ] User can switch between light and dark mode.
+
+### 🎮 Stretch Features
+
+- [ ] User can practice Blackjack basic strategy.
+- [ ] User can play Tic-Tac-Toe against an unbeatable AI.
+- [ ] User can receive hints about optimal Tic-Tac-Toe moves.
+- [ ] User can switch between Chess, Blackjack, and Tic-Tac-Toe.
+
+---
+
+# 🖥️ Screen Archetypes
+
+The following screens will allow users to navigate through Loop-Hole and access its main features.
+
+### 1. Login / Sign Up Screen
+- Create an account.
+- Log in using Firebase Authentication.
+- Access saved learning progress.
+
+### 2. Home / Openings Catalog Screen
+- Browse available chess opening courses.
+- View course names and difficulty levels.
+- Select a course to begin learning.
+
+### 3. Course Detail Screen
+- View information about an opening.
+- See available lessons.
+- Start learning a selected course.
+
+### 4. Learn Screen
+- Interact with a chessboard.
+- Follow step-by-step instructions.
+- Practice opening moves.
+- Receive feedback on moves.
+
+### 5. Review Screen
+- Practice previously learned openings.
+- Complete review sessions without hints.
+- Strengthen memory through repetition.
+
+### 6. Progress Dashboard Screen
+- View completed lessons.
+- Track mastered openings.
+- Monitor daily practice activity.
+- View learning progress.
+
+### 7. Leaderboard Screen (Optional)
+- View weekly rankings.
+- Compare XP with other players.
+- Track competitive progress.
+
+### 8. Community Screen (Optional)
+- Browse community-created courses.
+- Discover new opening strategies.
+- Share custom courses.
+
+### 9. Analysis Board Screen (Optional)
+- Analyze chess positions.
+- Review possible moves using Stockfish.
+
+### 10. Additional Games Screen (Stretch)
+- Access Blackjack strategy training.
+- Play Tic-Tac-Toe against AI.
+
+---
+
+# 🧭 Navigation
+
+## Tab Navigation
+
+The application will use bottom navigation to allow users to switch between the main sections.
+
+| Tab | Destination |
+|---|---|
+| 🏠 Openings | Home / Opening Catalog |
+| 🔁 Review | Review Screen |
+| 📊 Dashboard | Progress Dashboard |
+| 🏆 Leaderboards | Leaderboard Screen (Optional) |
+| 🌐 Community | Community Screen (Optional) |
+| 🎮 Games | Additional Games (Stretch) |
+
+## Flow Navigation
+
+### Login / Sign Up Screen
+
+- Login / Sign Up → Home Screen
+
+### Home / Openings Catalog Screen
+
+- Home → Course Detail Screen (select a course)
+
+### Course Detail Screen
+
+- Course Detail → Learn Screen (start lesson)
+- Course Detail → Home Screen (go back)
+
+### Learn Screen
+
+- Learn → Course Detail Screen (complete lesson)
+- Learn → Review Screen (practice learned moves)
+
+### Review Screen
+
+- Review → Dashboard Screen (complete review)
+- Review → Home Screen (return to openings)
+
+### Dashboard Screen
+
+- Dashboard → Review Screen (review due moves)
+- Dashboard → Course Detail Screen (select course in progress)
+
+### Community Screen (Optional)
+
+- Community → Course Detail Screen (select community course)
+- Community → Course Creator Screen (create a course)
+
+### Games Screen (Stretch)
+
+- Games → Blackjack Trainer
+- Games → Tic-Tac-Toe
+
+---
+
+# 🎨 Wireframes
+
+Wireframes will illustrate the layout and navigation of Loop-Hole before development.
+
+### Planned Wireframes
+
+1. Login / Sign Up Screen
+2. Home / Openings Catalog Screen
+3. Course Detail Screen
+4. Learn Screen
+5. Review Screen
+6. Progress Dashboard Screen
+
+**Hand-Drawn Wireframes**
+
+> 📷 Add screenshots of hand-drawn wireframes here.
+
+### [BONUS] Digital Wireframes & Mockups
+
+> 🎨 Add Figma designs here.
+
+### [BONUS] Interactive Prototype
+
+> 🔗 Add Figma prototype link here.
+
+---
+
+# 💻 Milestone 2 - Build Sprint 1 (Unit 8)
+
+## GitHub Project Board
+
+> 📷 Add screenshot of the GitHub Project Board showing all three milestones.
+
+## Issue Cards
+
+> 📷 Add screenshots of Sprint 1 issues and upcoming Sprint 2 issues with assigned owners.
+
+## Issues Worked on This Sprint
+
+### Planned Sprint 1 Tasks
+
+- [ ] Set up Android Studio project.
+- [ ] Create GitHub repository and Project Board.
+- [ ] Design initial application layouts.
+- [ ] Implement navigation between screens.
+- [ ] Create Home / Openings Catalog Screen.
+- [ ] Create chess opening course data model.
+- [ ] Display opening courses using RecyclerView.
+- [ ] Create Course Detail Screen.
+- [ ] Build initial interactive chessboard.
+- [ ] Connect Course Detail Screen to Learn Screen.
+
+## Sprint 1 Build Progress
+
+> 🎥 Add GIF demonstrating the Home Screen, opening courses, and initial chessboard.
+
+---
+
+# 🚧 Milestone 3 - Build Sprint 2 (Unit 9)
+
+## GitHub Project Board
+
+> 📷 Add updated screenshot of the Project Board showing Sprint 2 progress.
+
+## Completed User Stories
+
+### Planned Sprint 2 Tasks
+
+- [ ] User can select a chess opening course.
+- [ ] User can interact with a chessboard.
+- [ ] User can follow step-by-step opening instructions.
+- [ ] User can make moves and receive feedback.
+- [ ] User can complete a chess lesson.
+- [ ] User can review previously learned moves.
+- [ ] User can view completed lessons and progress.
+- [ ] User can navigate between the main application screens.
+
+## Pending User Stories / Future Improvements
+
+- [ ] Advanced spaced-repetition scheduling.
+- [ ] XP and leaderboards.
+- [ ] Community-created courses.
+- [ ] Human-like opponent simulation.
+- [ ] Stockfish chess analysis.
+- [ ] Blackjack strategy trainer.
+- [ ] Tic-Tac-Toe strategy trainer.
+
+## Sprint 2 Build Progress
+
+> 🎥 Add GIF or video showing the updated chessboard, lesson progression, review mode, and dashboard.
+
+---
+
+# 🎬 App Demo
+
+## Demo Day Video
+
+> 🎥 Insert YouTube or Vimeo link to the completed application demo.
+
+---
+
+## 🧰 Planned Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| Kotlin | Android application development |
+| Android Studio | Development environment |
+| Firebase Authentication | User accounts and login |
+| Firebase Firestore | Store user progress and course data |
+| RecyclerView | Display chess opening courses |
+| Stockfish | Future chess analysis functionality |
+| GitHub | Version control and team collaboration |
+| Figma | UI/UX design and prototyping |
+
+---
+
+<div align="center">
+
+### ♟️ LOOP-HOLE
+
+**Practice Smarter. Play Better.**
+
+Built as part of the CodePath AND102 Android Development Capstone Project.
+
+</div>
