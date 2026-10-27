@@ -65,11 +65,12 @@ Future updates will introduce leaderboards, community-created courses, computer 
 | Category | Evaluation |
 |---|---|
 | **Category** | Games / Education |
-| **Mobile** | Loop-Hole is designed for mobile devices with a touch-friendly chessboard, simple navigation, and short practice sessions that users can complete anywhere. |
+| **Mobile** | Loop-Hole is a native Android app with a touch-friendly chessboard, simple navigation, and short practice sessions that users can complete anywhere. It uses **push notifications** when reviews are due or a streak is at risk, **haptic and audio feedback** on correct and incorrect moves, and **real-time** leaderboard updates through Firebase. |
 | **Story** | A student constantly loses chess games against friends because they do not understand opening strategies. They download Loop-Hole, practice different openings, review their moves, and gradually become a stronger player. |
 | **Market** | Beginner and intermediate chess players, college students, chess clubs, and casual players looking to improve their skills without paying for expensive training tools. |
 | **Habit** | Daily reviews, practice streaks, progress tracking, XP, and leaderboards encourage users to return and continue learning. |
 | **Scope** | Version 1 focuses on chess opening courses, interactive lessons, review sessions, and progress tracking. Future versions will introduce community features, AI-supported practice, and additional strategy games. |
+| **APIs** | Firebase (Authentication, Firestore, Cloud Messaging), the free Lichess API (opening explorer and real-game move data), and the open-source Stockfish engine. |
 
 ---
 
@@ -119,6 +120,7 @@ The following screens will allow users to navigate through Loop-Hole and access 
 - Create an account.
 - Log in using Firebase Authentication.
 - Access saved learning progress.
+- Continue as a guest to preview the first lesson (optional).
 
 ### 2. Home / Openings Catalog Screen
 - Browse available chess opening courses.
@@ -161,7 +163,16 @@ The following screens will allow users to navigate through Loop-Hole and access 
 - Analyze chess positions.
 - Review possible moves using Stockfish.
 
-### 10. Additional Games Screen (Stretch)
+### 10. Course Creator Screen (Optional)
+- Create a custom opening course.
+- Add moves and comments to each line.
+- Publish the course to the community.
+
+### 11. Practice Opponent Screen (Optional)
+- Play an opening against a computer-generated opponent.
+- Get feedback when you leave the line you learned.
+
+### 12. Additional Games Screen (Stretch)
 - Access Blackjack strategy training.
 - Play Tic-Tac-Toe against AI.
 
@@ -187,6 +198,7 @@ The application will use bottom navigation to allow users to switch between the 
 ### Login / Sign Up Screen
 
 - Login / Sign Up → Home Screen
+- Login / Sign Up → Home Screen (continue as guest)
 
 ### Home / Openings Catalog Screen
 
@@ -195,17 +207,21 @@ The application will use bottom navigation to allow users to switch between the 
 ### Course Detail Screen
 
 - Course Detail → Learn Screen (start lesson)
+- Course Detail → Practice Opponent Screen (practice the opening, optional)
+- Course Detail → Login / Sign Up Screen (guest finishes the preview lesson)
 - Course Detail → Home Screen (go back)
 
 ### Learn Screen
 
 - Learn → Course Detail Screen (complete lesson)
 - Learn → Review Screen (practice learned moves)
+- Learn → Analysis Board Screen (tap "Analyze", optional)
 
 ### Review Screen
 
 - Review → Dashboard Screen (complete review)
 - Review → Home Screen (return to openings)
+- Review → Analysis Board Screen (analyze a missed move, optional)
 
 ### Dashboard Screen
 
@@ -216,6 +232,19 @@ The application will use bottom navigation to allow users to switch between the 
 
 - Community → Course Detail Screen (select community course)
 - Community → Course Creator Screen (create a course)
+
+### Course Creator Screen (Optional)
+
+- Course Creator → Community Screen (after publishing)
+
+### Practice Opponent Screen (Optional)
+
+- Practice Opponent → Analysis Board Screen (analyze the game)
+- Practice Opponent → Course Detail Screen (go back)
+
+### Analysis Board Screen (Optional)
+
+- Analysis Board → Previous Screen (go back)
 
 ### Games Screen (Stretch)
 
@@ -228,13 +257,6 @@ The application will use bottom navigation to allow users to switch between the 
 
 Wireframes will illustrate the layout and navigation of Loop-Hole before development.
 
-
-<img width="1510" height="1041" alt="Hand-Drawn Chess App Wireframes" src="https://github.com/user-attachments/assets/b4199c97-8f68-4861-84a0-c338c3484996" />
-
-<img width="601" height="834" alt="PNG image" src="https://github.com/user-attachments/assets/c576b926-789b-43c7-92f6-413c5a0c6d72" />
-
-
-
 ### Planned Wireframes
 
 1. Login / Sign Up Screen
@@ -246,11 +268,11 @@ Wireframes will illustrate the layout and navigation of Loop-Hole before develop
 
 **Hand-Drawn Wireframes**
 
-> 📷 Add screenshots of hand-drawn wireframes here.
+<img width="1510" height="1041" alt="Hand-Drawn Chess App Wireframes" src="https://github.com/user-attachments/assets/b4199c97-8f68-4861-84a0-c338c3484996" />
 
 ### [BONUS] Digital Wireframes & Mockups
 
-> 🎨 Add Figma designs here.
+<img width="601" height="834" alt="Digital Wireframes" src="https://github.com/user-attachments/assets/c576b926-789b-43c7-92f6-413c5a0c6d72" />
 
 ### [BONUS] Interactive Prototype
 
@@ -341,6 +363,8 @@ Wireframes will illustrate the layout and navigation of Loop-Hole before develop
 | Firebase Authentication | User accounts and login |
 | Firebase Firestore | Store user progress and course data |
 | RecyclerView | Display chess opening courses |
+| Firebase Cloud Messaging | Push notifications for due reviews and streaks |
+| Lichess API | Opening explorer and real-game move data |
 | Stockfish | Future chess analysis functionality |
 | GitHub | Version control and team collaboration |
 | Figma | UI/UX design and prototyping |
