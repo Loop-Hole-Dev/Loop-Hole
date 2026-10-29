@@ -268,6 +268,9 @@ Wireframes will illustrate the layout and navigation of Loop-Hole before develop
 
 **Hand-Drawn Wireframes**
 
+<img width="1668" height="2388" alt="Untitled_Artwork 81" src="https://github.com/user-attachments/assets/14ec89e7-be85-4db7-a313-ab41bb7d1ed2" />
+
+
 <img width="1510" height="1041" alt="Hand-Drawn Chess App Wireframes" src="https://github.com/user-attachments/assets/b4199c97-8f68-4861-84a0-c338c3484996" />
 
 ### [BONUS] Digital Wireframes & Mockups
