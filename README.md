@@ -159,10 +159,22 @@ Loop-Hole is a free Android chess training app that helps beginner and intermedi
 this section]
 <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
 
+<img width="1599" height="1166" alt="image" src="https://github.com/user-attachments/assets/b9df113c-eb26-4072-80cf-8f3f4233f9ce" />
+
+
+
 ## Issue cards
 
 - [Add screenshot of your Project Board with the issues that you've been working on for this unit's milestone] <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+
+<img width="1693" height="650" alt="image" src="https://github.com/user-attachments/assets/4b633e3f-6237-45bf-81ae-b16cde2f953b" />
+
+
 - [Add screenshot of your Project Board with the issues that you're working on in the **NEXT sprint**. It should include issues for next unit with assigned owners.] <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+
+<img width="1737" height="627" alt="image" src="https://github.com/user-attachments/assets/f485d9bd-47a4-41be-96c8-2028bb411d93" />
+
+
 
 ## Issues worked on this sprint
 
