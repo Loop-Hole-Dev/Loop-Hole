@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Loop-Hole</string>
+    <string name="tagline">Learn why the moves work.</string>
+
+    <!-- Login / Sign up -->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="log_in">Log In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="create_account">Create Account</string>
+    <string name="switch_to_sign_up">New here? Create an account</string>
+    <string name="switch_to_log_in">Already have an account? Log in</string>
+    <string name="continue_as_guest">Continue as guest</string>
+    <string name="error_email_invalid">Enter a valid email address</string>
+    <string name="error_password_short">Password must be at least 6 characters</string>
+    <string name="error_password_mismatch">Passwords don\'t match</string>
+    <string name="error_firebase_missing">Accounts aren\'t set up yet (google-services.json missing). You can continue as a guest.</string>
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="error_wrong_credentials">Incorrect email or password</string>
+    <string name="error_email_in_use">An account with this email already exists</string>
+    <string name="error_network">No internet connection</string>
+
+    <!-- Tabs -->
+    <string name="tab_openings">Openings</string>
+    <string name="tab_review">Review</string>
+    <string name="tab_dashboard">Dashboard</string>
+    <string name="log_out">Log out</string>
+    <string name="sign_in">Sign in</string>
+    <string name="welcome_user">Welcome, %1$s</string>
+    <string name="guest">Guest</string>
+    <string name="openings_placeholder">The openings catalog is coming soon.</string>
+    <string name="review_placeholder">Nothing to review yet. Learn an opening first.</string>
+    <string name="dashboard_placeholder">Your progress will show up here.</string>
+</resources>
