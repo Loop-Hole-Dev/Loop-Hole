@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/openingsFragment">
+
+    <fragment
+        android:id="@+id/openingsFragment"
+        android:name="com.loophole.app.openings.OpeningsFragment"
+        android:label="@string/tab_openings" />
+
+    <fragment
+        android:id="@+id/reviewFragment"
+        android:name="com.loophole.app.review.ReviewFragment"
+        android:label="@string/tab_review" />
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.loophole.app.dashboard.DashboardFragment"
+        android:label="@string/tab_dashboard" />
+</navigation>

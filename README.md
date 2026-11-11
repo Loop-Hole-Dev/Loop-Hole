@@ -56,7 +56,7 @@ Loop-Hole is a free Android chess training app that helps beginner and intermedi
 
 ### 2. Screen Archetypes
 
-- [ ] **Login / Sign Up Screen**
+- [x] **Login / Sign Up Screen**
   - User can create an account and log in using Firebase Authentication
   - User can preview the first lesson without creating an account
 - [ ] **Home / Openings Catalog Screen**
@@ -90,16 +90,16 @@ Loop-Hole is a free Android chess training app that helps beginner and intermedi
 
 **Tab Navigation** (Tab to Screen)
 
-- [ ] Openings (Home / Openings Catalog)
-- [ ] Review
-- [ ] Dashboard
+- [x] Openings (Home / Openings Catalog)
+- [x] Review
+- [x] Dashboard
 - [ ] Leaderboards (optional)
 - [ ] Community (optional)
 - [ ] Games (stretch)
 
 **Flow Navigation** (Screen to Screen)
 
-- [ ] **Login / Sign Up Screen**
+- [x] **Login / Sign Up Screen**
   - => Home (after login or sign up)
   - => Home (continue as guest)
 - [ ] **Home / Openings Catalog Screen**
@@ -155,9 +155,7 @@ Loop-Hole is a free Android chess training app that helps beginner and intermedi
 
 ## GitHub Project board
 
-[Add screenshot of your Project Board with three milestones visible in
-this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+Our board with the three sprint milestones (Sprint 1: Unit 8, Sprint 2: Unit 9, Sprint 3: Demo Day):
 
 <img width="1599" height="1166" alt="image" src="https://github.com/user-attachments/assets/b9df113c-eb26-4072-80cf-8f3f4233f9ce" />
 
@@ -165,12 +163,12 @@ this section]
 
 ## Issue cards
 
-- [Add screenshot of your Project Board with the issues that you've been working on for this unit's milestone] <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+**This sprint (Sprint 1):**
 
 <img width="1693" height="650" alt="image" src="https://github.com/user-attachments/assets/4b633e3f-6237-45bf-81ae-b16cde2f953b" />
 
 
-- [Add screenshot of your Project Board with the issues that you're working on in the **NEXT sprint**. It should include issues for next unit with assigned owners.] <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+**Next sprint (Sprint 2), with assigned owners:**
 
 <img width="1737" height="627" alt="image" src="https://github.com/user-attachments/assets/f485d9bd-47a4-41be-96c8-2028bb411d93" />
 
@@ -178,8 +176,20 @@ this section]
 
 ## Issues worked on this sprint
 
-- List the issues you completed this sprint
-- [Add giphy that shows current build progress for Milestone 2. Note: We will be looking for progression of work between Milestone 2 and 3. Make sure your giphys are not duplicated and clearly show the change from Sprint 1 to 2.]
+- [x] #1 Set up Android project and Firebase (Kotlin, Firebase Auth + Firestore SDKs)
+- [x] #2 Build Login / Sign Up screen with Firebase Auth (email/password, input validation, guest mode)
+- [x] #3 Set up bottom tab navigation (Openings, Review, Dashboard)
+
+**Completed user stories**
+
+- [x] User can create an account and log in using Firebase Authentication
+- [x] User can continue as a guest without creating an account
+- [x] User can switch between the Openings, Review, and Dashboard tabs
+- [x] User can log out (or sign in from guest mode)
+
+**Build progress (Sprint 1):** login and sign-up validation, guest mode, and tab navigation.
+
+<img src="docs/sprint1-build.gif" width=300 alt="Sprint 1 build progress: login, sign-up validation, guest mode, and tab navigation">
 
 <br>
 
