@@ -2,6 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
+        android:id="@+id/action_games"
+        android:title="@string/menu_games"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_theme"
+        android:title="@string/menu_theme"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_reminders"
+        android:checkable="true"
+        android:title="@string/setting_reminders"
+        app:showAsAction="never" />
+    <item
         android:id="@+id/action_sound"
         android:checkable="true"
         android:title="@string/setting_sound"

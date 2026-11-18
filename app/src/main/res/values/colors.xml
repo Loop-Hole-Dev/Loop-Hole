@@ -19,4 +19,6 @@
     <color name="status_correct">#2E7D32</color>
     <color name="status_wrong">#C62828</color>
     <color name="on_progress_track">#2C5A29</color>
+    <color name="primary">@color/brand_green</color>
+    <color name="on_primary">@color/white</color>
 </resources>

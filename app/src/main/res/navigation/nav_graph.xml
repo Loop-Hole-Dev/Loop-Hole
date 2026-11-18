@@ -30,4 +30,9 @@
         android:id="@+id/learnFragment"
         android:name="com.loophole.app.learn.LearnFragment"
         android:label="@string/learn_title" />
+
+    <fragment
+        android:id="@+id/ticTacToeFragment"
+        android:name="com.loophole.app.games.TicTacToeFragment"
+        android:label="@string/tic_tac_toe" />
 </navigation>

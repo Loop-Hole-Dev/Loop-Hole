@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.os.bundleOf
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.loophole.app.R
@@ -73,6 +74,13 @@ class CourseDetailFragment : Fragment() {
                 if (isDone) R.string.lesson_row_done else R.string.lesson_row_todo, lesson.order, lesson.title
             )
             row.root.setOnClickListener { openLesson(lesson.id) }
+        }
+
+        val learned = course.lessons.filter { it.id in done }
+        binding.practiceButton.isVisible = learned.isNotEmpty()
+        binding.practiceButton.text = resources.getQuantityString(R.plurals.practice_button, learned.size, learned.size)
+        binding.practiceButton.setOnClickListener {
+            findNavController().navigate(R.id.learnFragment, LearnFragment.practiceArgs(learned.map { it.id }))
         }
 
         val next = course.lessons.firstOrNull { it.id !in done }

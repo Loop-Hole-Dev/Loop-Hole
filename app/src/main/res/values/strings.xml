@@ -112,4 +112,68 @@
     <string name="review_now">Review Now</string>
     <string name="review_now_count">Review Now (%1$d)</string>
     <string name="your_courses">Your courses</string>
+
+    <!-- XP (#13) -->
+    <string name="lesson_complete_xp">Lesson complete! +%1$d XP</string>
+    <string name="review_perfect_xp">Perfect review! +%1$d XP</string>
+    <string name="review_done_xp">Review done. +%1$d XP</string>
+    <string name="level">Level %1$d</string>
+    <string name="xp_total">%1$d XP</string>
+    <string name="xp_to_next">%1$d XP to level %2$d</string>
+
+    <!-- Practice (#14) -->
+    <plurals name="practice_button">
+        <item quantity="one">Practice vs computer (%d line)</item>
+        <item quantity="other">Practice vs computer (%d lines)</item>
+    </plurals>
+    <string name="practice_title">Practice: %1$s</string>
+    <plurals name="practice_label">
+        <item quantity="one">Random lines from %d learned lesson</item>
+        <item quantity="other">Random lines from %d learned lessons</item>
+    </plurals>
+    <string name="practice_intro">You play %1$s. Can you answer every line?</string>
+    <string name="practice_intro_body">The computer plays a random line from what you\'ve learned. No hints.</string>
+    <string name="practice_perfect_xp">Flawless! +%1$d XP</string>
+    <string name="practice_done_xp">Line finished. +%1$d XP</string>
+    <plurals name="practice_result">
+        <item quantity="one">That was \"%1$s\". %2$d correct moves, %3$d mistake.</item>
+        <item quantity="other">That was \"%1$s\". %2$d correct moves, %3$d mistakes.</item>
+    </plurals>
+    <string name="practice_another">Play another line</string>
+
+    <!-- Reminders (#15) -->
+    <string name="setting_reminders">Daily reminder (6 pm)</string>
+    <string name="reminder_channel">Practice reminders</string>
+    <string name="reminder_channel_description">A daily nudge when reviews are due or your streak is at risk</string>
+    <string name="reminder_title">Time to practice</string>
+    <plurals name="reminder_due">
+        <item quantity="one">You have %d review due. Keep your openings sharp!</item>
+        <item quantity="other">You have %d reviews due. Keep your openings sharp!</item>
+    </plurals>
+    <plurals name="reminder_streak">
+        <item quantity="one">Keep your %d-day streak alive with a quick lesson.</item>
+        <item quantity="other">Keep your %d-day streak alive with a quick lesson.</item>
+    </plurals>
+    <string name="reminders_on">Daily reminder set for 6 pm</string>
+    <string name="reminders_permission_denied">Allow notifications in Settings to get reminders</string>
+
+    <!-- Theme (#16) -->
+    <string name="menu_theme">Theme</string>
+    <string name="theme_system">System default</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+
+    <!-- Games (#17) -->
+    <string name="menu_games">Tic-Tac-Toe</string>
+    <string name="tic_tac_toe">Tic-Tac-Toe</string>
+    <string name="new_game">New game</string>
+    <string name="ttt_your_turn">Your turn (X)</string>
+    <string name="ttt_computer_turn">Computer is thinking…</string>
+    <string name="ttt_hint">Try the highlighted square</string>
+    <string name="ttt_you_win">You win!</string>
+    <string name="ttt_you_lose">Computer wins</string>
+    <string name="ttt_draw">Draw. That\'s perfect play!</string>
+    <string name="ttt_tally">Wins %1$d · Draws %2$d · Losses %3$d</string>
+    <string name="ttt_cell">Row %1$d, column %2$d, %3$s</string>
+    <string name="ttt_empty">empty</string>
 </resources>

@@ -78,7 +78,7 @@ Loop-Hole is a free Android chess training app that helps beginner and intermedi
   - User can browse and publish courses for other users
 - [ ] **Course Creator Screen** (optional)
   - User can create custom chess opening courses
-- [ ] **Practice Opponent Screen** (optional)
+- [x] **Practice Opponent Screen** (optional)
   - User can practice against computer-generated opponents
 - [ ] **Analysis Board Screen** (optional)
   - User can analyze chess positions using Stockfish
@@ -234,10 +234,30 @@ Seeded courses: Italian Game, London System (White), Caro-Kann Defense, Sicilian
 - [x] User can track completed lessons and overall progress
 - [x] User can maintain a daily practice streak
 
-**Pending:** leaderboards, community courses, the course creator, computer opponents, and Stockfish analysis (optional features planned for Sprint 3 or later).
+**Pending:** leaderboards, community courses, the course creator, and Stockfish analysis (optional features planned for Sprint 3 or later).
 
 [Add video/gif of your current application that shows build progress]
 <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+
+# Sprint 3 (Unit 10: Demo Day)
+
+## Issues worked on this sprint
+
+- [x] #13 Earn XP and levels (XP for lessons, reviews and practice; level card on the Dashboard)
+- [x] #14 Build Practice mode against a computer opponent (it plays random lines from what you've learned)
+- [x] #15 Add daily practice reminders (6 pm notification when reviews are due or the streak is at risk)
+- [x] #16 Add light/dark mode switch (⋮ menu > Theme)
+- [x] #17 Build Tic-Tac-Toe with unbeatable AI and hints (⋮ menu > Tic-Tac-Toe)
+- [ ] #18 Build weekly and all-time leaderboards (needs the Firebase project; XP is already saved to `users/{uid}.xp`)
+- [ ] #19 Build Blackjack basic strategy trainer (stretch)
+
+## Completed user stories
+
+- [x] User can earn XP by completing lessons and reviews
+- [x] User can practice against computer-generated opponents
+- [x] User can receive daily practice reminders (push notifications)
+- [x] User can switch between light and dark mode
+- [x] Stretch: User can play Tic-Tac-Toe against an unbeatable AI and get hints on the optimal move
 
 ## App Demo Video
 

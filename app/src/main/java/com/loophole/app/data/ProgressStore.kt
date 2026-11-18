@@ -120,6 +120,9 @@ object ProgressStore {
         return count
     }
 
+    fun activeToday(context: Context) =
+        dayKey(Date()) in prefs(context).getStringSet(KEY_ACTIVE_DAYS, emptySet()).orEmpty()
+
     private fun markActiveToday(context: Context) {
         val days = prefs(context).getStringSet(KEY_ACTIVE_DAYS, emptySet()).orEmpty()
         prefs(context).edit { putStringSet(KEY_ACTIVE_DAYS, days + dayKey(Date())) }

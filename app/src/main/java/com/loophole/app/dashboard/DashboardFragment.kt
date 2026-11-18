@@ -11,6 +11,7 @@ import com.loophole.app.R
 import com.loophole.app.course.CourseDetailFragment
 import com.loophole.app.data.CourseRepository
 import com.loophole.app.data.ProgressStore
+import com.loophole.app.data.Xp
 import com.loophole.app.databinding.FragmentDashboardBinding
 import com.loophole.app.databinding.ItemCourseProgressBinding
 
@@ -46,6 +47,16 @@ class DashboardFragment : Fragment() {
         val totalLessons = courses.sumOf { it.lessons.size }
         val learned = courses.sumOf { c -> c.lessons.count { it.id in done } }
         val dueToday = ProgressStore.dueTodayCount(context)
+
+        val xp = Xp.total(context)
+        val level = Xp.levelFor(xp)
+        val start = Xp.startOf(level)
+        val end = Xp.startOf(level + 1)
+        binding.levelText.text = getString(R.string.level, level)
+        binding.xpText.text = getString(R.string.xp_total, xp)
+        binding.levelBar.max = end - start
+        binding.levelBar.setProgressCompat(xp - start, false)
+        binding.nextLevelText.text = getString(R.string.xp_to_next, end - xp, level + 1)
 
         binding.statLearned.statValue.text = getString(R.string.fraction, learned, totalLessons)
         binding.statDue.statValue.text = dueToday.toString()
