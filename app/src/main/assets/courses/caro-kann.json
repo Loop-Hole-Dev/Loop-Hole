@@ -1,0 +1,103 @@
+{
+  "id": "caro-kann",
+  "name": "Caro-Kann Defense",
+  "side": "black",
+  "difficulty": "Beginner",
+  "order": 3,
+  "description": "A rock-solid answer to 1.e4. Prepare ...d5 with ...c6, and get your light-squared bishop out before ...e6 locks it in. Fewer tactics and healthy pawns.",
+  "keyMoves": ["e4", "c6"],
+  "lessons": [
+    {
+      "id": "caro-kann-1",
+      "title": "Classical: bishop to f5",
+      "summary": "Get your bishop out, then meet White's h-pawn push calmly.",
+      "moves": [
+        { "san": "e4", "note": "White takes the center." },
+        { "san": "c6", "note": "The Caro-Kann: prepare ...d5 with pawn support." },
+        { "san": "d4", "note": "White builds a full center." },
+        { "san": "d5", "note": "Challenge e4 right away." },
+        { "san": "Nc3", "note": "White defends e4." },
+        { "san": "dxe4", "note": "Take the pawn to free your position." },
+        { "san": "Nxe4", "note": "White recaptures." },
+        { "san": "Bf5", "note": "The key idea: develop the bishop with tempo, before playing ...e6." },
+        { "san": "Ng3", "note": "White hits your bishop." },
+        { "san": "Bg6", "note": "Retreat, but keep the bishop on its strong diagonal." },
+        { "san": "h4", "note": "White threatens h5 to trap your bishop." },
+        { "san": "h6", "note": "Make room, so the bishop can drop back to h7." },
+        { "san": "Nf3", "note": "White develops." },
+        { "san": "Nd7", "note": "The knight on d7 stops Ne5 and supports ...Ngf6 later." },
+        { "san": "h5", "note": "White pushes on." },
+        { "san": "Bh7", "note": "Tuck the bishop away on h7. It still aims at White's queenside." }
+      ]
+    },
+    {
+      "id": "caro-kann-2",
+      "title": "Advance Variation",
+      "summary": "Bishop out first, then attack White's pawn chain with ...c5.",
+      "moves": [
+        { "san": "e4", "note": "White takes the center." },
+        { "san": "c6", "note": "Prepare ...d5." },
+        { "san": "d4", "note": "White builds a full center." },
+        { "san": "d5", "note": "Challenge e4." },
+        { "san": "e5", "note": "White grabs space and locks the center." },
+        { "san": "Bf5", "note": "Develop the bishop outside the pawn chain before ...e6." },
+        { "san": "Nf3", "note": "White develops." },
+        { "san": "e6", "note": "Now ...e6 is fine, because your bishop is already out." },
+        { "san": "Be2", "note": "White prepares to castle." },
+        { "san": "c5", "note": "Hit the base of White's pawn chain. Moving the c-pawn twice is worth it here." },
+        { "san": "O-O", "note": "White castles." },
+        { "san": "Nc6", "note": "More pressure on d4." },
+        { "san": "c3", "note": "White props up d4." },
+        { "san": "cxd4", "note": "Trade to open the c-file." },
+        { "san": "cxd4", "note": "White recaptures." },
+        { "san": "Qb6", "note": "The queen joins the attack on d4 and also eyes b2." }
+      ]
+    },
+    {
+      "id": "caro-kann-3",
+      "title": "Exchange Variation",
+      "summary": "When White trades on d5, develop actively and guard b7.",
+      "moves": [
+        { "san": "e4", "note": "White takes the center." },
+        { "san": "c6", "note": "Prepare ...d5." },
+        { "san": "d4", "note": "White builds a full center." },
+        { "san": "d5", "note": "Challenge e4." },
+        { "san": "exd5", "note": "The Exchange Variation: White releases the tension." },
+        { "san": "cxd5", "note": "Recapture with the c-pawn and keep a pawn in the center." },
+        { "san": "Bd3", "note": "White's bishop aims at your kingside." },
+        { "san": "Nc6", "note": "Develop and pressure d4." },
+        { "san": "c3", "note": "White supports d4." },
+        { "san": "Nf6", "note": "Develop, and guard h7 from White's bishop." },
+        { "san": "Bf4", "note": "White's other bishop comes out actively." },
+        { "san": "Bg4", "note": "Develop with tempo by attacking White's queen." },
+        { "san": "Qb3", "note": "White's queen escapes and attacks b7 at the same time." },
+        { "san": "Qd7", "note": "Defend b7 calmly. You're well developed and the game is equal." }
+      ]
+    },
+    {
+      "id": "caro-kann-4",
+      "title": "Two Knights Variation",
+      "summary": "Trade your bishop for the knight, then simplify.",
+      "moves": [
+        { "san": "e4", "note": "White takes the center." },
+        { "san": "c6", "note": "Prepare ...d5." },
+        { "san": "Nc3", "note": "White develops before deciding on d4." },
+        { "san": "d5", "note": "Challenge e4 right away." },
+        { "san": "Nf3", "note": "The Two Knights: White brings out both knights." },
+        { "san": "Bg4", "note": "Pin the knight against White's queen." },
+        { "san": "h3", "note": "White asks the bishop what it wants to do." },
+        { "san": "Bxf3", "note": "Trade the bishop for the knight instead of retreating." },
+        { "san": "Qxf3", "note": "White recaptures with the queen." },
+        { "san": "e6", "note": "Support d5 and open a path for your other bishop." },
+        { "san": "d4", "note": "White takes the center." },
+        { "san": "Nf6", "note": "Develop and add pressure on e4." },
+        { "san": "Bd3", "note": "White defends e4." },
+        { "san": "dxe4", "note": "Release the tension." },
+        { "san": "Nxe4", "note": "White recaptures with the knight." },
+        { "san": "Nxe4", "note": "Trade knights to reduce White's attacking chances." },
+        { "san": "Qxe4", "note": "White recaptures with the queen." },
+        { "san": "Nd7", "note": "Develop your last knight, ready for ...Nf6 with tempo on the queen." }
+      ]
+    }
+  ]
+}

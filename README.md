@@ -59,17 +59,17 @@ Loop-Hole is a free Android chess training app that helps beginner and intermedi
 - [x] **Login / Sign Up Screen**
   - User can create an account and log in using Firebase Authentication
   - User can preview the first lesson without creating an account
-- [ ] **Home / Openings Catalog Screen**
+- [x] **Home / Openings Catalog Screen**
   - User can browse a catalog of available chess opening courses
-- [ ] **Course Detail Screen**
+- [x] **Course Detail Screen**
   - User can select a chess opening and view its details
-- [ ] **Learn Screen**
+- [x] **Learn Screen**
   - User can learn chess openings through interactive lessons
   - User can move chess pieces on a touch-friendly chessboard
   - User can receive feedback after making correct or incorrect moves
-- [ ] **Review Screen**
+- [x] **Review Screen**
   - User can review previously learned moves without hints
-- [ ] **Progress Dashboard Screen**
+- [x] **Progress Dashboard Screen**
   - User can track completed lessons and overall progress
   - User can maintain a daily practice streak
 - [ ] **Leaderboard Screen** (optional)
@@ -102,21 +102,21 @@ Loop-Hole is a free Android chess training app that helps beginner and intermedi
 - [x] **Login / Sign Up Screen**
   - => Home (after login or sign up)
   - => Home (continue as guest)
-- [ ] **Home / Openings Catalog Screen**
+- [x] **Home / Openings Catalog Screen**
   - => Course Detail Screen (select a course)
-- [ ] **Course Detail Screen**
+- [x] **Course Detail Screen**
   - => Learn Screen (start lesson)
   - => Practice Opponent Screen (practice the opening)
   - => Login / Sign Up Screen (guest finishes the preview lesson)
   - => Home Screen (go back)
-- [ ] **Learn Screen**
+- [x] **Learn Screen**
   - => Course Detail Screen (complete lesson)
   - => Review Screen (practice learned moves)
   - => Analysis Board Screen (tap "Analyze")
-- [ ] **Review Screen**
+- [x] **Review Screen**
   - => Dashboard Screen (complete review)
   - => Analysis Board Screen (analyze a missed move)
-- [ ] **Progress Dashboard Screen**
+- [x] **Progress Dashboard Screen**
   - => Review Screen (review due moves)
   - => Course Detail Screen (select a course in progress)
 - [ ] **Community Screen**
@@ -191,6 +191,19 @@ Our board with the three sprint milestones (Sprint 1: Unit 8, Sprint 2: Unit 9, 
 
 <img src="docs/sprint1-build.gif" width=300 alt="Sprint 1 build progress: login, sign-up validation, guest mode, and tab navigation">
 
+## Firestore data model
+
+Courses ship inside the app (`app/src/main/assets/courses/*.json`) so the catalog works offline and in builds without `google-services.json`. When Firebase is set up, the app reads the catalog from Firestore, and the first signed-in user seeds it from those files. Progress is saved on the device for guests and mirrored to Firestore for signed-in users.
+
+| Collection | Document ID | Fields |
+| --- | --- | --- |
+| `users` | `{uid}` | `email`, `createdAt` |
+| `courses` | `{courseId}` (e.g. `italian-game`) | `name`, `side` (`white`/`black`), `difficulty`, `description`, `order`, `keyMoves` (SAN list), `lessonCount` |
+| `lessons` | `{lessonId}` (e.g. `italian-game-1`) | `courseId`, `order`, `title`, `summary`, `moves`: list of `{san, note}`, where `note` explains why the move is played |
+| `progress` | `{uid}_{lessonId}` | `uid`, `lessonId`, `courseId`, `completedAt`, `reps`, `intervalDays`, `ease`, `dueAt`, `lastMistakes`, `updatedAt` (SM-2 review schedule) |
+
+Seeded courses: Italian Game, London System (White), Caro-Kann Defense, Sicilian Defense (Black), with 4 lessons each. Lines are based on common Lichess opening data, and every move is checked by a unit test (`CourseContentTest`).
+
 <br>
 
 # Milestone 3 - Build Sprint 2 (Unit 9)
@@ -199,11 +212,29 @@ Our board with the three sprint milestones (Sprint 1: Unit 8, Sprint 2: Unit 9, 
 
 [Add screenshot of your Project Board with the updated status of issues for Milestone 3. Note that these should include the updated issues you worked on for this sprint and not be a duplicate of Milestone 2 Project board.] <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
 
+## Issues worked on this sprint
+
+- [x] #4 Design Firestore data model (users, courses, lessons, progress; 4 seeded courses)
+- [x] #5 Build Openings Catalog (Home) screen
+- [x] #6 Build Course Detail screen
+- [x] #7 Build interactive touch chessboard (legal move validation, board flips for Black)
+- [x] #8 Build Learn screen with move-by-move lessons
+- [x] #9 Add correct/incorrect move feedback (green/red highlights, sound, haptics, toggles)
+- [x] #10 Build Review screen with spaced repetition (SM-2)
+- [x] #11 Build Progress Dashboard
+
 ## Completed user stories
 
-- List the completed user stories from this unit
-- List any pending user stories / any user stories you decided to cut
-from the original requirements
+- [x] User can browse a catalog of available chess opening courses
+- [x] User can select a chess opening and view its details
+- [x] User can learn chess openings through interactive lessons
+- [x] User can move chess pieces on a touch-friendly chessboard
+- [x] User can receive feedback after making correct or incorrect moves
+- [x] User can review previously learned moves without hints
+- [x] User can track completed lessons and overall progress
+- [x] User can maintain a daily practice streak
+
+**Pending:** leaderboards, community courses, the course creator, computer opponents, and Stockfish analysis (optional features planned for Sprint 3 or later).
 
 [Add video/gif of your current application that shows build progress]
 <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>

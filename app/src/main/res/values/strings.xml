@@ -29,7 +29,87 @@
     <string name="sign_in">Sign in</string>
     <string name="welcome_user">Welcome, %1$s</string>
     <string name="guest">Guest</string>
-    <string name="openings_placeholder">The openings catalog is coming soon.</string>
-    <string name="review_placeholder">Nothing to review yet. Learn an opening first.</string>
-    <string name="dashboard_placeholder">Your progress will show up here.</string>
+    <string name="setting_sound">Sound effects</string>
+    <string name="setting_haptics">Haptic feedback</string>
+
+    <!-- Openings catalog (#5) -->
+    <string name="catalog_subtitle">Pick an opening and learn why every move works.</string>
+    <string name="side_white">White</string>
+    <string name="side_black">Black</string>
+    <string name="course_meta">%1$s · %2$s · %3$s</string>
+    <plurals name="lesson_count">
+        <item quantity="one">%d lesson</item>
+        <item quantity="other">%d lessons</item>
+    </plurals>
+    <string name="course_card_description">%1$s, %2$d of %3$d lessons completed</string>
+
+    <!-- Course detail (#6) -->
+    <string name="lessons">Lessons</string>
+    <string name="lessons_completed">%1$d / %2$d lessons</string>
+    <string name="start_lesson">Start Lesson %1$d</string>
+    <string name="continue_lesson">Continue with Lesson %1$d</string>
+    <string name="practice_again">Practice from Lesson 1</string>
+    <string name="lesson_row_done">Lesson %1$d, %2$s, completed</string>
+    <string name="lesson_row_todo">Lesson %1$d, %2$s</string>
+
+    <!-- Learn (#8, #9) -->
+    <string name="learn_title">Lesson</string>
+    <string name="board_description">Chessboard. Tap a piece, then tap a square to move it.</string>
+    <string name="lesson_label">%1$s · Lesson %2$d of %3$d</string>
+    <string name="move_progress">%1$d / %2$d</string>
+    <string name="learn_intro">You play %1$s. Find each move.</string>
+    <string name="your_move">Your move</string>
+    <string name="correct">Correct! %1$s</string>
+    <string name="wrong_learn">Not quite. Try again, or tap Hint.</string>
+    <string name="hint">Hint</string>
+    <string name="restart">Restart</string>
+    <string name="hint_piece">Hint: move the highlighted piece.</string>
+    <string name="hint_move">Hint: play %1$s.</string>
+    <string name="lesson_complete">Lesson complete!</string>
+    <string name="lesson_complete_perfect">Perfect, no mistakes. This line is now in your review queue so it sticks.</string>
+    <plurals name="lesson_complete_mistakes">
+        <item quantity="one">%d mistake. This line is now in your review queue so it sticks.</item>
+        <item quantity="other">%d mistakes. This line is now in your review queue so it sticks.</item>
+    </plurals>
+    <string name="next_lesson">Next: %1$s</string>
+    <string name="back_to_course">Back to course</string>
+    <string name="course_finished">Course finished! Back to course</string>
+
+    <!-- Review (#10) -->
+    <string name="review_label">%1$s · Review %2$d of %3$d</string>
+    <string name="review_intro">You play %1$s. Play the line from memory.</string>
+    <string name="review_intro_body">No hints this time. Two misses on a move reveal it.</string>
+    <string name="wrong_review">Not quite. Try again.</string>
+    <string name="reveal_move">The move was %1$s. Play it to continue.</string>
+    <string name="review_perfect">Perfect review!</string>
+    <string name="review_done">Review done</string>
+    <plurals name="review_result">
+        <item quantity="one">%1$d mistake. Next review %2$s.</item>
+        <item quantity="other">%1$d mistakes. Next review %2$s.</item>
+    </plurals>
+    <plurals name="next_review">
+        <item quantity="one">Next review (%d left)</item>
+        <item quantity="other">Next review (%d left)</item>
+    </plurals>
+    <string name="finish_review">Finish</string>
+    <plurals name="reviews_due_label">
+        <item quantity="one">review due</item>
+        <item quantity="other">reviews due</item>
+    </plurals>
+    <string name="review_empty">Nothing to review yet. Finish a lesson and it will show up here.</string>
+    <string name="review_ready">Play each line from memory. Lines you know well come back less often.</string>
+    <string name="review_caught_up">All caught up! Next review %1$s.</string>
+    <string name="start_review">Start review</string>
+    <string name="browse_openings">Browse openings</string>
+    <string name="review_schedule">Schedule</string>
+    <string name="due_now">Due now</string>
+
+    <!-- Dashboard (#11) -->
+    <string name="stat_learned">Lessons learned</string>
+    <string name="stat_due">Due today</string>
+    <string name="stat_streak">Day streak</string>
+    <string name="fraction">%1$d/%2$d</string>
+    <string name="review_now">Review Now</string>
+    <string name="review_now_count">Review Now (%1$d)</string>
+    <string name="your_courses">Your courses</string>
 </resources>

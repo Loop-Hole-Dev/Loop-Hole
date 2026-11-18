@@ -1,0 +1,91 @@
+{
+  "id": "london-system",
+  "name": "London System",
+  "side": "white",
+  "difficulty": "Beginner",
+  "order": 2,
+  "description": "One setup against almost everything: pawns on c3, d4 and e3, with the bishop out to f4 before e3 locks it in. Easy to learn, hard to beat.",
+  "keyMoves": ["d4", "d5", "Bf4"],
+  "lessons": [
+    {
+      "id": "london-system-1",
+      "title": "The London setup",
+      "summary": "The pawn pyramid and where every piece goes.",
+      "moves": [
+        { "san": "d4", "note": "Take the center with the queen's pawn." },
+        { "san": "d5", "note": "Black takes an equal share of the center." },
+        { "san": "Bf4", "note": "The London move: develop the bishop BEFORE e3, so it isn't stuck behind your pawns." },
+        { "san": "Nf6", "note": "Black develops naturally." },
+        { "san": "e3", "note": "Now support d4 and open a path for your other bishop." },
+        { "san": "e6", "note": "Black builds a solid wall." },
+        { "san": "Nf3", "note": "Develop, and keep an eye on e5, a key square in the London." },
+        { "san": "c5", "note": "Black challenges your center from the side." },
+        { "san": "c3", "note": "Complete the pyramid c3-d4-e3. Your d4 pawn is rock solid." },
+        { "san": "Nc6", "note": "Black adds pressure on d4." },
+        { "san": "Nbd2", "note": "The knight goes to d2, not c3, so it doesn't block your c-pawn." },
+        { "san": "Bd6", "note": "Black offers to trade off your strong bishop." },
+        { "san": "Bg3", "note": "Keep the bishop. If Black takes on g3, recapture with the h-pawn and open the h-file." },
+        { "san": "O-O", "note": "Black castles." },
+        { "san": "Bd3", "note": "Your last minor piece takes its best diagonal, aimed at Black's king. Next: castle." }
+      ]
+    },
+    {
+      "id": "london-system-2",
+      "title": "Against the King's Indian setup",
+      "summary": "When Black fianchettoes, give your bishop a home with h3.",
+      "moves": [
+        { "san": "d4", "note": "Start with the queen's pawn." },
+        { "san": "Nf6", "note": "Black keeps options open." },
+        { "san": "Bf4", "note": "Same London move: bishop out first." },
+        { "san": "g6", "note": "Black prepares to put the bishop on g7." },
+        { "san": "e3", "note": "Build the base of your pyramid." },
+        { "san": "Bg7", "note": "The fianchettoed bishop aims down the long diagonal at your queenside." },
+        { "san": "Nf3", "note": "Develop and block that bishop's diagonal." },
+        { "san": "O-O", "note": "Black castles quickly." },
+        { "san": "Be2", "note": "With no black pawn on d5 to hit, the bishop is solid on e2." },
+        { "san": "d6", "note": "Black prepares ...e5 to kick your bishop." },
+        { "san": "h3", "note": "Give your f4 bishop a retreat on h2, so it can never be trapped or traded off." },
+        { "san": "c5", "note": "Black strikes at d4." },
+        { "san": "c3", "note": "Keep d4 protected by a pawn and finish your setup." }
+      ]
+    },
+    {
+      "id": "london-system-3",
+      "title": "Answering ...c5 and ...Qb6",
+      "summary": "Black attacks b2. Offer a queen trade and keep control.",
+      "moves": [
+        { "san": "d4", "note": "Take the center." },
+        { "san": "d5", "note": "Black matches you." },
+        { "san": "Bf4", "note": "Bishop out first." },
+        { "san": "c5", "note": "Black hits d4 right away." },
+        { "san": "e3", "note": "Support d4. Don't rush to take on c5." },
+        { "san": "Nc6", "note": "More pressure on d4." },
+        { "san": "c3", "note": "The pyramid again. d4 is now defended twice." },
+        { "san": "Qb6", "note": "Black's queen attacks b2, which your bishop left unguarded." },
+        { "san": "Qb3", "note": "Offer a queen trade. If Black takes, recapture with the a-pawn and use the open a-file." },
+        { "san": "c4", "note": "Black kicks your queen and gains space." },
+        { "san": "Qc2", "note": "Retreat to c2, where the queen helps prepare e4 to open the center." }
+      ]
+    },
+    {
+      "id": "london-system-4",
+      "title": "Against the mirror ...Bf5",
+      "summary": "When Black copies you, hit b7 with c4 and Qb3.",
+      "moves": [
+        { "san": "d4", "note": "Take the center." },
+        { "san": "d5", "note": "Black matches you." },
+        { "san": "Bf4", "note": "Bishop out first." },
+        { "san": "Nf6", "note": "Black develops." },
+        { "san": "e3", "note": "Support d4." },
+        { "san": "Bf5", "note": "Black copies your idea and develops the bishop outside the pawn chain." },
+        { "san": "c4", "note": "With Black's bishop gone from c8, b7 is weak. Start by attacking d5." },
+        { "san": "e6", "note": "Black supports d5." },
+        { "san": "Nc3", "note": "Add another attacker on d5." },
+        { "san": "c6", "note": "Black holds d5 firmly." },
+        { "san": "Qb3", "note": "Attack b7, which Black's bishop no longer guards." },
+        { "san": "Qb6", "note": "Black defends and offers a queen trade." },
+        { "san": "c5", "note": "Push past the queen with tempo and grab space on the queenside." }
+      ]
+    }
+  ]
+}

@@ -4,6 +4,8 @@
         <item name="colorPrimaryContainer">@color/board_light</item>
         <item name="colorOnPrimary">@color/white</item>
         <item name="colorSecondary">@color/board_dark</item>
+        <item name="colorSecondaryContainer">@color/progress_track</item>
+        <item name="colorOnSecondaryContainer">@color/on_progress_track</item>
     </style>
 
     <style name="Theme.LoopHole.NoActionBar">

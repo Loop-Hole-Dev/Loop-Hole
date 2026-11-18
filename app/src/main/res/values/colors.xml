@@ -6,4 +6,17 @@
     <color name="board_dark">#769656</color>
     <color name="ink">#1C1B1A</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Chessboard -->
+    <color name="piece_dark">#262421</color>
+    <color name="piece_light">#FFFFFF</color>
+    <color name="hint_blue">#2F80ED</color>
+    <color name="mark_correct">#9945B649</color>
+    <color name="mark_wrong">#AAE5483B</color>
+    <color name="progress_track">#DDE6D6</color>
+
+    <!-- Feedback text -->
+    <color name="status_correct">#2E7D32</color>
+    <color name="status_wrong">#C62828</color>
+    <color name="on_progress_track">#2C5A29</color>
 </resources>

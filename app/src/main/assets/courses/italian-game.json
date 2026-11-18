@@ -1,0 +1,99 @@
+{
+  "id": "italian-game",
+  "name": "Italian Game",
+  "side": "white",
+  "difficulty": "Beginner",
+  "order": 1,
+  "description": "Develop fast, aim your bishop at f7 and castle early. The Italian is the classic first opening: simple plans, quick development and plenty of attacking chances.",
+  "keyMoves": ["e4", "e5", "Nf3", "Nc6", "Bc4"],
+  "lessons": [
+    {
+      "id": "italian-game-1",
+      "title": "Giuoco Piano: build slowly",
+      "summary": "The main plan: c3 and d3, castle, then expand.",
+      "moves": [
+        { "san": "e4", "note": "Grab the center and open lines for your queen and light-squared bishop." },
+        { "san": "e5", "note": "Black claims an equal share of the center." },
+        { "san": "Nf3", "note": "Develop toward the center and attack the e5 pawn right away." },
+        { "san": "Nc6", "note": "Black defends e5 with a developing move." },
+        { "san": "Bc4", "note": "The Italian bishop. It eyes f7, the square only Black's king protects." },
+        { "san": "Bc5", "note": "Black mirrors you and aims the bishop at your f2." },
+        { "san": "c3", "note": "Prepare d4 for a big center, and take the d4 square away from Black's knight." },
+        { "san": "Nf6", "note": "Black develops and puts pressure on your e4 pawn." },
+        { "san": "d3", "note": "Protect e4 calmly. You keep a solid center and avoid early tactics." },
+        { "san": "d6", "note": "Black supports e5 and opens a path for the light-squared bishop." },
+        { "san": "O-O", "note": "Castle. Your king is safe and your rook can join the game." },
+        { "san": "O-O", "note": "Black castles too. Both sides have finished the first phase." },
+        { "san": "Re1", "note": "The rook backs up e4 and gets ready for a later d4 push." }
+      ]
+    },
+    {
+      "id": "italian-game-2",
+      "title": "Two Knights: the quiet d3",
+      "summary": "Answer 3...Nf6 by protecting e4 and castling.",
+      "moves": [
+        { "san": "e4", "note": "Take the center with your king's pawn." },
+        { "san": "e5", "note": "Black answers in kind." },
+        { "san": "Nf3", "note": "Develop and attack e5." },
+        { "san": "Nc6", "note": "Black defends." },
+        { "san": "Bc4", "note": "Aim the bishop at f7." },
+        { "san": "Nf6", "note": "The Two Knights Defense: Black attacks e4 at once instead of developing the bishop first." },
+        { "san": "d3", "note": "Defend e4 with a pawn. No gambits needed, and your position stays sound." },
+        { "san": "Be7", "note": "A modest square for the bishop. Black wants to castle quickly." },
+        { "san": "O-O", "note": "Castle before starting any action in the center." },
+        { "san": "O-O", "note": "Black's king is safe too." },
+        { "san": "Re1", "note": "Put the rook behind your e-pawn, where the center may open." },
+        { "san": "d6", "note": "Black reinforces e5." },
+        { "san": "c3", "note": "Same plan as the Giuoco Piano: prepare d4 and give your bishop a retreat to c2." }
+      ]
+    },
+    {
+      "id": "italian-game-3",
+      "title": "Strike with c3 and d4",
+      "summary": "Hit the center while Black's pieces aren't ready.",
+      "moves": [
+        { "san": "e4", "note": "Take the center." },
+        { "san": "e5", "note": "Black matches you." },
+        { "san": "Nf3", "note": "Develop and attack e5." },
+        { "san": "Nc6", "note": "Black defends." },
+        { "san": "Bc4", "note": "Aim the bishop at f7." },
+        { "san": "Bc5", "note": "Black's bishop aims at f2." },
+        { "san": "c3", "note": "Prepare d4." },
+        { "san": "Nf6", "note": "Black attacks e4." },
+        { "san": "d4", "note": "Strike now! Two pawns in the center hit e5 and gain space." },
+        { "san": "exd4", "note": "Black takes, so your center can't roll forward with tempo." },
+        { "san": "cxd4", "note": "Recapture with the c-pawn and keep two pawns side by side in the center." },
+        { "san": "Bb4+", "note": "Black's bishop escapes with check instead of retreating." },
+        { "san": "Bd2", "note": "Block with your bishop and offer a trade." },
+        { "san": "Bxd2+", "note": "Black trades bishops." },
+        { "san": "Nbxd2", "note": "Recapture with the b1 knight, developing another piece." },
+        { "san": "d5", "note": "Black hits back in the center before you can play e5." },
+        { "san": "exd5", "note": "Take. The e-file opens toward Black's uncastled king." },
+        { "san": "Nxd5", "note": "Black recaptures with the knight, which sits well on d5." },
+        { "san": "Qb3", "note": "Pressure d5 and f7 at the same time. Black has to be careful." }
+      ]
+    },
+    {
+      "id": "italian-game-4",
+      "title": "Don't fall for 3...Nd4",
+      "summary": "Trade the knight off and castle. Don't grab e5.",
+      "moves": [
+        { "san": "e4", "note": "Take the center." },
+        { "san": "e5", "note": "Black matches you." },
+        { "san": "Nf3", "note": "Develop and attack e5." },
+        { "san": "Nc6", "note": "Black defends." },
+        { "san": "Bc4", "note": "Aim the bishop at f7." },
+        { "san": "Nd4", "note": "A trap! If you grab e5 with Nxe5, Black's queen jumps to g5 with nasty threats." },
+        { "san": "Nxd4", "note": "Trade off the annoying knight instead. Simple and strong." },
+        { "san": "exd4", "note": "Black recaptures, but the pawn on d4 is now a target." },
+        { "san": "O-O", "note": "Castle and bring your rook closer. You're ahead in development." },
+        { "san": "Nf6", "note": "Black develops and attacks e4." },
+        { "san": "Re1", "note": "Defend e4 with the rook. Your pieces work together." },
+        { "san": "d6", "note": "Black blocks the e-file and frees the bishop." },
+        { "san": "c3", "note": "Attack d4 to open lines for your pieces." },
+        { "san": "dxc3", "note": "Black takes." },
+        { "san": "Nxc3", "note": "Recapture and develop your last minor piece. You have a big lead in development." }
+      ]
+    }
+  ]
+}
