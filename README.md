@@ -198,6 +198,7 @@ Our board with the three sprint milestones (Sprint 1: Unit 8, Sprint 2: Unit 9, 
 ## GitHub Project board
 
 [Add screenshot of your Project Board with the updated status of issues for Milestone 3. Note that these should include the updated issues you worked on for this sprint and not be a duplicate of Milestone 2 Project board.] <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img width="605" height="556" alt="image" src="https://github.com/user-attachments/assets/f8706a06-569c-4051-ba4c-43b7fa0ee4c3" />
 
 ## Completed user stories
 
