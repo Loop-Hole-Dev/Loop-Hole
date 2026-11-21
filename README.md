@@ -59,17 +59,17 @@ Loop-Hole is a free Android chess training app that helps beginner and intermedi
 - [x] **Login / Sign Up Screen**
   - User can create an account and log in using Firebase Authentication
   - User can preview the first lesson without creating an account
-- [ ] **Home / Openings Catalog Screen**
+- [x] **Home / Openings Catalog Screen**
   - User can browse a catalog of available chess opening courses
-- [ ] **Course Detail Screen**
+- [x] **Course Detail Screen**
   - User can select a chess opening and view its details
-- [ ] **Learn Screen**
+- [x] **Learn Screen**
   - User can learn chess openings through interactive lessons
   - User can move chess pieces on a touch-friendly chessboard
   - User can receive feedback after making correct or incorrect moves
-- [ ] **Review Screen**
+- [x] **Review Screen**
   - User can review previously learned moves without hints
-- [ ] **Progress Dashboard Screen**
+- [x] **Progress Dashboard Screen**
   - User can track completed lessons and overall progress
   - User can maintain a daily practice streak
 - [ ] **Leaderboard Screen** (optional)
@@ -78,7 +78,7 @@ Loop-Hole is a free Android chess training app that helps beginner and intermedi
   - User can browse and publish courses for other users
 - [ ] **Course Creator Screen** (optional)
   - User can create custom chess opening courses
-- [ ] **Practice Opponent Screen** (optional)
+- [x] **Practice Opponent Screen** (optional)
   - User can practice against computer-generated opponents
 - [ ] **Analysis Board Screen** (optional)
   - User can analyze chess positions using Stockfish
@@ -102,21 +102,21 @@ Loop-Hole is a free Android chess training app that helps beginner and intermedi
 - [x] **Login / Sign Up Screen**
   - => Home (after login or sign up)
   - => Home (continue as guest)
-- [ ] **Home / Openings Catalog Screen**
+- [x] **Home / Openings Catalog Screen**
   - => Course Detail Screen (select a course)
-- [ ] **Course Detail Screen**
+- [x] **Course Detail Screen**
   - => Learn Screen (start lesson)
   - => Practice Opponent Screen (practice the opening)
   - => Login / Sign Up Screen (guest finishes the preview lesson)
   - => Home Screen (go back)
-- [ ] **Learn Screen**
+- [x] **Learn Screen**
   - => Course Detail Screen (complete lesson)
   - => Review Screen (practice learned moves)
   - => Analysis Board Screen (tap "Analyze")
-- [ ] **Review Screen**
+- [x] **Review Screen**
   - => Dashboard Screen (complete review)
   - => Analysis Board Screen (analyze a missed move)
-- [ ] **Progress Dashboard Screen**
+- [x] **Progress Dashboard Screen**
   - => Review Screen (review due moves)
   - => Course Detail Screen (select a course in progress)
 - [ ] **Community Screen**
@@ -191,6 +191,19 @@ Our board with the three sprint milestones (Sprint 1: Unit 8, Sprint 2: Unit 9, 
 
 <img src="docs/sprint1-build.gif" width=300 alt="Sprint 1 build progress: login, sign-up validation, guest mode, and tab navigation">
 
+## Firestore data model
+
+Courses ship inside the app (`app/src/main/assets/courses/*.json`) so the catalog works offline and in builds without `google-services.json`. When Firebase is set up, the app reads the catalog from Firestore, and the first signed-in user seeds it from those files. Progress is saved on the device for guests and mirrored to Firestore for signed-in users.
+
+| Collection | Document ID | Fields |
+| --- | --- | --- |
+| `users` | `{uid}` | `email`, `createdAt` |
+| `courses` | `{courseId}` (e.g. `italian-game`) | `name`, `side` (`white`/`black`), `difficulty`, `description`, `order`, `keyMoves` (SAN list), `lessonCount` |
+| `lessons` | `{lessonId}` (e.g. `italian-game-1`) | `courseId`, `order`, `title`, `summary`, `moves`: list of `{san, note}`, where `note` explains why the move is played |
+| `progress` | `{uid}_{lessonId}` | `uid`, `lessonId`, `courseId`, `completedAt`, `reps`, `intervalDays`, `ease`, `dueAt`, `lastMistakes`, `updatedAt` (SM-2 review schedule) |
+
+Seeded courses: Italian Game, London System (White), Caro-Kann Defense, Sicilian Defense (Black), with 4 lessons each. Lines are based on common Lichess opening data, and every move is checked by a unit test (`CourseContentTest`).
+
 <br>
 
 # Milestone 3 - Build Sprint 2 (Unit 9)
@@ -200,15 +213,65 @@ Our board with the three sprint milestones (Sprint 1: Unit 8, Sprint 2: Unit 9, 
 [Add screenshot of your Project Board with the updated status of issues for Milestone 3. Note that these should include the updated issues you worked on for this sprint and not be a duplicate of Milestone 2 Project board.] <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
 <img width="605" height="556" alt="image" src="https://github.com/user-attachments/assets/f8706a06-569c-4051-ba4c-43b7fa0ee4c3" />
 
+## Issues worked on this sprint
+
+- [x] #4 Design Firestore data model (users, courses, lessons, progress; 4 seeded courses)
+- [x] #5 Build Openings Catalog (Home) screen
+- [x] #6 Build Course Detail screen
+- [x] #7 Build interactive touch chessboard (legal move validation, board flips for Black)
+- [x] #8 Build Learn screen with move-by-move lessons
+- [x] #9 Add correct/incorrect move feedback (green/red highlights, sound, haptics, toggles)
+- [x] #10 Build Review screen with spaced repetition (SM-2)
+- [x] #11 Build Progress Dashboard
+
 ## Completed user stories
 
-- List the completed user stories from this unit
-- List any pending user stories / any user stories you decided to cut
-from the original requirements
+- [x] User can browse a catalog of available chess opening courses
+- [x] User can select a chess opening and view its details
+- [x] User can learn chess openings through interactive lessons
+- [x] User can move chess pieces on a touch-friendly chessboard
+- [x] User can receive feedback after making correct or incorrect moves
+- [x] User can review previously learned moves without hints
+- [x] User can track completed lessons and overall progress
+- [x] User can maintain a daily practice streak
+
+**Pending:** leaderboards, community courses, the course creator, and Stockfish analysis (optional features planned for Sprint 3 or later).
 
 [Add video/gif of your current application that shows build progress]
 <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
 
+# Sprint 3 (Unit 10: Demo Day)
+
+## GitHub Project board
+
+Issues #1–#17 are done. Leaderboards (#18) and the Blackjack trainer (#19) are still in the backlog.
+
+<img src="docs/sprint3-board.png" width=600 alt="Project board: issues #1 to #17 in Done, #18 and #19 in Backlog">
+
+## Issues worked on this sprint
+
+- [x] #13 Earn XP and levels (XP for lessons, reviews and practice; level card on the Dashboard)
+- [x] #14 Build Practice mode against a computer opponent (it plays random lines from what you've learned)
+- [x] #15 Add daily practice reminders (6 pm notification when reviews are due or the streak is at risk)
+- [x] #16 Add light/dark mode switch (⋮ menu > Theme)
+- [x] #17 Build Tic-Tac-Toe with unbeatable AI and hints (⋮ menu > Tic-Tac-Toe)
+- [ ] #18 Build weekly and all-time leaderboards (needs the Firebase project; XP is already saved to `users/{uid}.xp`)
+- [ ] #19 Build Blackjack basic strategy trainer (stretch)
+
+## Completed user stories
+
+- [x] User can earn XP by completing lessons and reviews
+- [x] User can practice against computer-generated opponents
+- [x] User can receive daily practice reminders (push notifications)
+- [x] User can switch between light and dark mode
+- [x] Stretch: User can play Tic-Tac-Toe against an unbeatable AI and get hints on the optimal move
+
 ## App Demo Video
 
 - Embed the YouTube/Vimeo link of your Completed Demo Day prep video
+
+Full walkthrough (3 min, MP4): [docs/loophole-demo.mp4](docs/loophole-demo.mp4)
+
+The GIF below plays at 2.5× speed. It shows a London System lesson (a wrong move, a hint, then the full line), practice against the computer (+14 XP), a perfect spaced-repetition review (+35 XP), the Dashboard at Level 2, turning on the daily reminder, switching to dark mode, and a Tic-Tac-Toe draw using hints.
+
+<img src="docs/sprint3-demo.gif" width=300 alt="Sprint 3 demo: lesson with feedback and hints, practice vs computer, review, XP and levels, reminders, dark mode, Tic-Tac-Toe">

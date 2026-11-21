@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="status_correct">#81C784</color>
+    <color name="status_wrong">#EF9A9A</color>
+    <color name="progress_track">#3A4436</color>
+    <color name="on_progress_track">#CFE8C9</color>
+    <color name="primary">#8FCB8A</color>
+    <color name="on_primary">#0E2A0D</color>
+</resources>

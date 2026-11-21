@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/openingsFragment">
+    app:startDestination="@id/openingsFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <!-- Tabs -->
     <fragment
         android:id="@+id/openingsFragment"
         android:name="com.loophole.app.openings.OpeningsFragment"
@@ -18,4 +19,20 @@
         android:id="@+id/dashboardFragment"
         android:name="com.loophole.app.dashboard.DashboardFragment"
         android:label="@string/tab_dashboard" />
+
+    <!-- Flow screens (arguments are passed as Bundles; see each fragment's companion). -->
+    <fragment
+        android:id="@+id/courseDetailFragment"
+        android:name="com.loophole.app.course.CourseDetailFragment"
+        android:label="" />
+
+    <fragment
+        android:id="@+id/learnFragment"
+        android:name="com.loophole.app.learn.LearnFragment"
+        android:label="@string/learn_title" />
+
+    <fragment
+        android:id="@+id/ticTacToeFragment"
+        android:name="com.loophole.app.games.TicTacToeFragment"
+        android:label="@string/tic_tac_toe" />
 </navigation>

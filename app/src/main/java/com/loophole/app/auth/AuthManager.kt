@@ -8,7 +8,9 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
 import com.google.firebase.auth.FirebaseAuthInvalidUserException
 import com.google.firebase.auth.FirebaseAuthUserCollisionException
+import com.google.firebase.firestore.FirebaseFirestore
 import com.loophole.app.R
+import com.loophole.app.data.FirestoreSchema
 
 /**
  * Wraps Firebase Authentication plus a local "guest" flag.
@@ -51,7 +53,15 @@ object AuthManager {
     fun signUp(context: Context, email: String, password: String, onResult: (errorRes: Int?) -> Unit) {
         val auth = auth(context) ?: return onResult(R.string.error_firebase_missing)
         auth.createUserWithEmailAndPassword(email, password)
-            .addOnSuccessListener { setGuest(context, false); onResult(null) }
+            .addOnSuccessListener { result ->
+                setGuest(context, false)
+                // Issue #4: one users/{uid} profile document per account.
+                result.user?.uid?.let { uid ->
+                    FirebaseFirestore.getInstance().collection(FirestoreSchema.USERS).document(uid)
+                        .set(mapOf("email" to email, "createdAt" to System.currentTimeMillis()))
+                }
+                onResult(null)
+            }
             .addOnFailureListener { onResult(errorFor(it)) }
     }
 

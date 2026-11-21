@@ -1,0 +1,91 @@
+{
+  "id": "sicilian-defense",
+  "name": "Sicilian Defense",
+  "side": "black",
+  "difficulty": "Intermediate",
+  "order": 4,
+  "description": "Fight for the center from the side. The Sicilian creates unbalanced positions where Black plays to win, not just to equalize. It's the most popular answer to 1.e4.",
+  "keyMoves": ["e4", "c5"],
+  "lessons": [
+    {
+      "id": "sicilian-defense-1",
+      "title": "Open Sicilian: the Najdorf setup",
+      "summary": "Trade your c-pawn for White's d-pawn, then play ...a6.",
+      "moves": [
+        { "san": "e4", "note": "White opens with the king's pawn." },
+        { "san": "c5", "note": "The Sicilian: control d4 from the side and unbalance the position." },
+        { "san": "Nf3", "note": "White develops and prepares d4." },
+        { "san": "d6", "note": "Guard e5 from White's pieces and free your light-squared bishop." },
+        { "san": "d4", "note": "White opens the center." },
+        { "san": "cxd4", "note": "Take! You trade a side pawn for a center pawn, which is a good deal." },
+        { "san": "Nxd4", "note": "White recaptures with the knight." },
+        { "san": "Nf6", "note": "Develop with tempo: you attack e4." },
+        { "san": "Nc3", "note": "White defends e4." },
+        { "san": "a6", "note": "The Najdorf move: take b5 away from White's pieces and prepare ...e5 or ...b5." }
+      ]
+    },
+    {
+      "id": "sicilian-defense-2",
+      "title": "Against the Alapin (2.c3)",
+      "summary": "Hit e4 with your knight, then trade on d4.",
+      "moves": [
+        { "san": "e4", "note": "White opens with the king's pawn." },
+        { "san": "c5", "note": "The Sicilian." },
+        { "san": "c3", "note": "The Alapin: White wants d4 and to recapture with a pawn." },
+        { "san": "Nf6", "note": "Attack e4 immediately, before White can play d4." },
+        { "san": "e5", "note": "White chases your knight." },
+        { "san": "Nd5", "note": "The knight lands on d5. It's safe there because White's pawn is on c3, not c4." },
+        { "san": "d4", "note": "White builds a center." },
+        { "san": "cxd4", "note": "Trade pawns so White's center can't stay flexible." },
+        { "san": "Nf3", "note": "White develops before taking back." },
+        { "san": "Nc6", "note": "Develop and pressure e5 and d4." },
+        { "san": "cxd4", "note": "White recaptures, keeping pawns on d4 and e5." },
+        { "san": "d6", "note": "Strike at e5 and open lines for your pieces." }
+      ]
+    },
+    {
+      "id": "sicilian-defense-3",
+      "title": "Against the Grand Prix (f4)",
+      "summary": "Fianchetto your bishop and stay solid against the kingside attack.",
+      "moves": [
+        { "san": "e4", "note": "White opens with the king's pawn." },
+        { "san": "c5", "note": "The Sicilian." },
+        { "san": "Nc3", "note": "White develops the knight first, with f4 in mind." },
+        { "san": "Nc6", "note": "Natural development that controls d4." },
+        { "san": "f4", "note": "The Grand Prix Attack: White plans a fast kingside attack." },
+        { "san": "g6", "note": "Prepare to put your bishop on the long diagonal." },
+        { "san": "Nf3", "note": "White develops." },
+        { "san": "Bg7", "note": "Your bishop now pressures d4 and b2 from far away." },
+        { "san": "Bc4", "note": "White aims the bishop at f7." },
+        { "san": "e6", "note": "Blunt the bishop. f7 is covered and the c4 bishop hits a wall on d5." },
+        { "san": "O-O", "note": "White castles." },
+        { "san": "Nge7", "note": "The knight goes to e7 so it supports ...d5 and doesn't block your bishop. Next you castle." }
+      ]
+    },
+    {
+      "id": "sicilian-defense-4",
+      "title": "Against the Moscow (3.Bb5+)",
+      "summary": "Block with your bishop, trade, and strike with ...d5.",
+      "moves": [
+        { "san": "e4", "note": "White opens with the king's pawn." },
+        { "san": "c5", "note": "The Sicilian." },
+        { "san": "Nf3", "note": "White develops." },
+        { "san": "d6", "note": "Guard e5." },
+        { "san": "Bb5+", "note": "White checks to trade pieces and avoid the main lines." },
+        { "san": "Bd7", "note": "Block with your bishop and offer a trade." },
+        { "san": "Bxd7+", "note": "White trades." },
+        { "san": "Qxd7", "note": "Recapture with the queen and keep c6 free for your knight." },
+        { "san": "O-O", "note": "White castles." },
+        { "san": "Nc6", "note": "Develop and control d4." },
+        { "san": "c3", "note": "White prepares d4." },
+        { "san": "Nf6", "note": "Develop and hit e4." },
+        { "san": "Re1", "note": "White defends e4." },
+        { "san": "e6", "note": "Prepare ...d5 and open a path for your dark-squared bishop." },
+        { "san": "d4", "note": "White opens the center." },
+        { "san": "cxd4", "note": "Trade pawns." },
+        { "san": "cxd4", "note": "White recaptures with the c-pawn." },
+        { "san": "d5", "note": "Hit back in the center. Now e4 is under real pressure." }
+      ]
+    }
+  ]
+}

@@ -29,7 +29,151 @@
     <string name="sign_in">Sign in</string>
     <string name="welcome_user">Welcome, %1$s</string>
     <string name="guest">Guest</string>
-    <string name="openings_placeholder">The openings catalog is coming soon.</string>
-    <string name="review_placeholder">Nothing to review yet. Learn an opening first.</string>
-    <string name="dashboard_placeholder">Your progress will show up here.</string>
+    <string name="setting_sound">Sound effects</string>
+    <string name="setting_haptics">Haptic feedback</string>
+
+    <!-- Openings catalog (#5) -->
+    <string name="catalog_subtitle">Pick an opening and learn why every move works.</string>
+    <string name="side_white">White</string>
+    <string name="side_black">Black</string>
+    <string name="course_meta">%1$s · %2$s · %3$s</string>
+    <plurals name="lesson_count">
+        <item quantity="one">%d lesson</item>
+        <item quantity="other">%d lessons</item>
+    </plurals>
+    <string name="course_card_description">%1$s, %2$d of %3$d lessons completed</string>
+
+    <!-- Course detail (#6) -->
+    <string name="lessons">Lessons</string>
+    <string name="lessons_completed">%1$d / %2$d lessons</string>
+    <string name="start_lesson">Start Lesson %1$d</string>
+    <string name="continue_lesson">Continue with Lesson %1$d</string>
+    <string name="practice_again">Practice from Lesson 1</string>
+    <string name="lesson_row_done">Lesson %1$d, %2$s, completed</string>
+    <string name="lesson_row_todo">Lesson %1$d, %2$s</string>
+
+    <!-- Learn (#8, #9) -->
+    <string name="learn_title">Lesson</string>
+    <string name="board_description">Chessboard. Tap a piece, then tap a square to move it.</string>
+    <string name="lesson_label">%1$s · Lesson %2$d of %3$d</string>
+    <string name="move_progress">%1$d / %2$d</string>
+    <string name="learn_intro">You play %1$s. Find each move.</string>
+    <string name="your_move">Your move</string>
+    <string name="correct">Correct! %1$s</string>
+    <string name="wrong_learn">Not quite. Try again, or tap Hint.</string>
+    <string name="hint">Hint</string>
+    <string name="restart">Restart</string>
+    <string name="hint_piece">Hint: move the highlighted piece.</string>
+    <string name="hint_move">Hint: play %1$s.</string>
+    <string name="lesson_complete">Lesson complete!</string>
+    <string name="lesson_complete_perfect">Perfect, no mistakes. This line is now in your review queue so it sticks.</string>
+    <plurals name="lesson_complete_mistakes">
+        <item quantity="one">%d mistake. This line is now in your review queue so it sticks.</item>
+        <item quantity="other">%d mistakes. This line is now in your review queue so it sticks.</item>
+    </plurals>
+    <string name="next_lesson">Next: %1$s</string>
+    <string name="back_to_course">Back to course</string>
+    <string name="course_finished">Course finished! Back to course</string>
+
+    <!-- Review (#10) -->
+    <string name="review_label">%1$s · Review %2$d of %3$d</string>
+    <string name="review_intro">You play %1$s. Play the line from memory.</string>
+    <string name="review_intro_body">No hints this time. Two misses on a move reveal it.</string>
+    <string name="wrong_review">Not quite. Try again.</string>
+    <string name="reveal_move">The move was %1$s. Play it to continue.</string>
+    <string name="review_perfect">Perfect review!</string>
+    <string name="review_done">Review done</string>
+    <plurals name="review_result">
+        <item quantity="one">%1$d mistake. Next review %2$s.</item>
+        <item quantity="other">%1$d mistakes. Next review %2$s.</item>
+    </plurals>
+    <plurals name="next_review">
+        <item quantity="one">Next review (%d left)</item>
+        <item quantity="other">Next review (%d left)</item>
+    </plurals>
+    <string name="finish_review">Finish</string>
+    <plurals name="reviews_due_label">
+        <item quantity="one">review due</item>
+        <item quantity="other">reviews due</item>
+    </plurals>
+    <string name="review_empty">Nothing to review yet. Finish a lesson and it will show up here.</string>
+    <string name="review_ready">Play each line from memory. Lines you know well come back less often.</string>
+    <string name="review_caught_up">All caught up! Next review %1$s.</string>
+    <string name="start_review">Start review</string>
+    <string name="browse_openings">Browse openings</string>
+    <string name="review_schedule">Schedule</string>
+    <string name="due_now">Due now</string>
+
+    <!-- Dashboard (#11) -->
+    <string name="stat_learned">Lessons learned</string>
+    <string name="stat_due">Due today</string>
+    <string name="stat_streak">Day streak</string>
+    <string name="fraction">%1$d/%2$d</string>
+    <string name="review_now">Review Now</string>
+    <string name="review_now_count">Review Now (%1$d)</string>
+    <string name="your_courses">Your courses</string>
+
+    <!-- XP (#13) -->
+    <string name="lesson_complete_xp">Lesson complete! +%1$d XP</string>
+    <string name="review_perfect_xp">Perfect review! +%1$d XP</string>
+    <string name="review_done_xp">Review done. +%1$d XP</string>
+    <string name="level">Level %1$d</string>
+    <string name="xp_total">%1$d XP</string>
+    <string name="xp_to_next">%1$d XP to level %2$d</string>
+
+    <!-- Practice (#14) -->
+    <plurals name="practice_button">
+        <item quantity="one">Practice vs computer (%d line)</item>
+        <item quantity="other">Practice vs computer (%d lines)</item>
+    </plurals>
+    <string name="practice_title">Practice: %1$s</string>
+    <plurals name="practice_label">
+        <item quantity="one">Random lines from %d learned lesson</item>
+        <item quantity="other">Random lines from %d learned lessons</item>
+    </plurals>
+    <string name="practice_intro">You play %1$s. Can you answer every line?</string>
+    <string name="practice_intro_body">The computer plays a random line from what you\'ve learned. No hints.</string>
+    <string name="practice_perfect_xp">Flawless! +%1$d XP</string>
+    <string name="practice_done_xp">Line finished. +%1$d XP</string>
+    <plurals name="practice_result">
+        <item quantity="one">That was \"%1$s\". %2$d correct moves, %3$d mistake.</item>
+        <item quantity="other">That was \"%1$s\". %2$d correct moves, %3$d mistakes.</item>
+    </plurals>
+    <string name="practice_another">Play another line</string>
+
+    <!-- Reminders (#15) -->
+    <string name="setting_reminders">Daily reminder (6 pm)</string>
+    <string name="reminder_channel">Practice reminders</string>
+    <string name="reminder_channel_description">A daily nudge when reviews are due or your streak is at risk</string>
+    <string name="reminder_title">Time to practice</string>
+    <plurals name="reminder_due">
+        <item quantity="one">You have %d review due. Keep your openings sharp!</item>
+        <item quantity="other">You have %d reviews due. Keep your openings sharp!</item>
+    </plurals>
+    <plurals name="reminder_streak">
+        <item quantity="one">Keep your %d-day streak alive with a quick lesson.</item>
+        <item quantity="other">Keep your %d-day streak alive with a quick lesson.</item>
+    </plurals>
+    <string name="reminders_on">Daily reminder set for 6 pm</string>
+    <string name="reminders_permission_denied">Allow notifications in Settings to get reminders</string>
+
+    <!-- Theme (#16) -->
+    <string name="menu_theme">Theme</string>
+    <string name="theme_system">System default</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+
+    <!-- Games (#17) -->
+    <string name="menu_games">Tic-Tac-Toe</string>
+    <string name="tic_tac_toe">Tic-Tac-Toe</string>
+    <string name="new_game">New game</string>
+    <string name="ttt_your_turn">Your turn (X)</string>
+    <string name="ttt_computer_turn">Computer is thinking…</string>
+    <string name="ttt_hint">Try the highlighted square</string>
+    <string name="ttt_you_win">You win!</string>
+    <string name="ttt_you_lose">Computer wins</string>
+    <string name="ttt_draw">Draw. That\'s perfect play!</string>
+    <string name="ttt_tally">Wins %1$d · Draws %2$d · Losses %3$d</string>
+    <string name="ttt_cell">Row %1$d, column %2$d, %3$s</string>
+    <string name="ttt_empty">empty</string>
 </resources>
