@@ -241,6 +241,12 @@ Seeded courses: Italian Game, London System (White), Caro-Kann Defense, Sicilian
 
 # Sprint 3 (Unit 10: Demo Day)
 
+## GitHub Project board
+
+Issues #1–#17 are done. Leaderboards (#18) and the Blackjack trainer (#19) are still in the backlog.
+
+<img src="docs/sprint3-board.png" width=600 alt="Project board: issues #1 to #17 in Done, #18 and #19 in Backlog">
+
 ## Issues worked on this sprint
 
 - [x] #13 Earn XP and levels (XP for lessons, reviews and practice; level card on the Dashboard)
@@ -262,3 +268,9 @@ Seeded courses: Italian Game, London System (White), Caro-Kann Defense, Sicilian
 ## App Demo Video
 
 - Embed the YouTube/Vimeo link of your Completed Demo Day prep video
+
+Full walkthrough (3 min, MP4): [docs/loophole-demo.mp4](docs/loophole-demo.mp4)
+
+The GIF below plays at 2.5× speed. It shows a London System lesson (a wrong move, a hint, then the full line), practice against the computer (+14 XP), a perfect spaced-repetition review (+35 XP), the Dashboard at Level 2, turning on the daily reminder, switching to dark mode, and a Tic-Tac-Toe draw using hints.
+
+<img src="docs/sprint3-demo.gif" width=300 alt="Sprint 3 demo: lesson with feedback and hints, practice vs computer, review, XP and levels, reminders, dark mode, Tic-Tac-Toe">
