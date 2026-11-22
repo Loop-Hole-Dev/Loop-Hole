@@ -277,4 +277,4 @@ The GIF below plays at 2.5× speed. It shows a London System lesson (a wrong mov
 
 - Embed the YouTube/Vimeo link of your Completed Demo Day prep video
 
-- Completed Demo Day Video: [https://recordmeeting.com/app/shared/VBS2Q3b4gqoj44oQAy-teQ](https://youtu.be/RHFkNo81SDM)
+- Completed Demo Day Video: https://youtu.be/RHFkNo81SDM
